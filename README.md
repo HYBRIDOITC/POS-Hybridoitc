@@ -1,4 +1,8 @@
-## About Hybridoitc POS
+##Hybridoitc POS
+
+This is an open source POS application initially created as an opensource asset for chitrali students.
+
+## About
 
 Hybridoitc POS is a POS application by [HYBRIDOITC](https://hybridoitc.com).
 
