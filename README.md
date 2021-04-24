@@ -1,6 +1,14 @@
-## About Hybridoitc POS
+##Hybridoitc POS
+
+This is an open source POS application initially created as an opensource asset for chitrali students.
+
+## About
 
 Hybridoitc POS is a POS application by [HYBRIDOITC](https://hybridoitc.com).
+
+This is an open source POS application initially created as an opensource asset for chitrali students.
+
+Framework Laravel
 
 ## Installation & Documentation
 You will find installation guide and documentation in the downloaded zip file.
