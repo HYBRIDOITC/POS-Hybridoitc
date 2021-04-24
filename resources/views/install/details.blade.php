@@ -51,28 +51,6 @@
                     </div>
                   </div>
 
-                <h4> License Details <small class="text-danger">Make sure to provide correct information from Envato/codecanyon</small></h4>
-                <hr/>
-
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label for="envato_purchase_code">Envato Purchase Code:*</label>
-                        <input type="password" name="ENVATO_PURCHASE_CODE" required class="form-control" id="envato_purchase_code">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label for="envato_username">Envato Username:*</label>
-                        <input type="text" name="ENVATO_USERNAME" required class="form-control" id="envato_username">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label for="envato_email">Your Email:</label>
-                        <input type="email" name="ENVATO_EMAIL" class="form-control" id="envato_email" placeholder="optional">
-                        <p class="help-block">For Newsletter & support</p>
-                    </div>
-                </div>
 
                   @if($activation_key)
                     <div class="col-md-6">
@@ -141,7 +119,7 @@
                   <div class="col-md-6">
                     <div class="form-group">
                         <label for="MAIL_FROM_ADDRESS">Default from address:*</label>
-                        <input type="email" class="form-control" id="MAIL_FROM_ADDRESS" name="MAIL_FROM_ADDRESS" placeholder="hello@ultimatepos.com" required>
+                        <input type="email" class="form-control" id="MAIL_FROM_ADDRESS" name="MAIL_FROM_ADDRESS" placeholder="hello@HYBRIDOITCPOS.com" required>
                     </div>
                   </div>
 

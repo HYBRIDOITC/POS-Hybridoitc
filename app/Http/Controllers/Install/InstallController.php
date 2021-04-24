@@ -154,7 +154,6 @@ class InstallController extends Controller
             $validatedData = $request->validate(
                 [
                 'APP_NAME' => 'required',
-                'ENVATO_PURCHASE_CODE' => 'required',
                 'DB_DATABASE' => 'required',
                 'DB_USERNAME' => 'required',
                 'DB_PASSWORD' => 'required',
@@ -163,7 +162,6 @@ class InstallController extends Controller
                 ],
                 [
                     'APP_NAME.required' => 'App Name is required',
-                    'ENVATO_PURCHASE_CODE.required' => 'Envaot Purchase code is required',
                     'DB_DATABASE.required' => 'Database Name is required',
                     'DB_USERNAME.required' => 'Database Username is required',
                     'DB_PASSWORD.required' => 'Database Password is required',
@@ -174,7 +172,7 @@ class InstallController extends Controller
 
             $this->outputLog = new BufferedOutput;
 
-            $input = $request->only(['APP_NAME', 'APP_TITLE', 'DB_HOST', 'DB_PORT', 'DB_DATABASE', 'DB_USERNAME', 'DB_PASSWORD', 'ENVATO_PURCHASE_CODE',
+            $input = $request->only(['APP_NAME', 'APP_TITLE', 'DB_HOST', 'DB_PORT', 'DB_DATABASE', 'DB_USERNAME', 'DB_PASSWORD', 
                 'MAIL_DRIVER',
                 'MAIL_FROM_ADDRESS', 'MAIL_FROM_NAME', 'MAIL_HOST', 'MAIL_PORT', 'MAIL_ENCRYPTION',
                 'MAIL_USERNAME', 'MAIL_PASSWORD']);
@@ -194,19 +192,7 @@ class InstallController extends Controller
             }
 
 
-            //Check for activation key
-            if ($this->macActivationKeyChecker) {
-                $licence_code = $request->get('MAC_LICENCE_CODE');
-                $licence_valid = mac_verify_licence_code($licence_code);
-                if (!$licence_valid) {
-                    return redirect()->back()
-                        ->with('error', 'Invalid Activation Licence Code!!')
-                        ->withInput();
-                    die('Invalid Purchase Code');
-                }
-
-                $input['MAC_LICENCE_CODE'] = $licence_code;
-            }
+           
 
             //Get .env file details and write the contents in it.
             $envPathExample = base_path('.env.example');
