@@ -1,4 +1,4 @@
-##Hybridoitc POS
+## Hybridoitc POS
 
 This is an open source POS application initially created as an opensource asset for chitrali students.
 
