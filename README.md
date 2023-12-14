@@ -1,33 +1,36 @@
-# 🛒 Hybridoitc POS
+## Hybridoitc POS
 
-Hybridoitc POS is an open-source Point of Sale (POS) application initially created to serve the needs of Chitrali students, developed by [HYBRIDOITC](https://hybridoitc.com).
+This is an open source POS application initially created as an opensource asset for chitrali students.
 
 ## About
 
-Hybridoitc POS is built on the Laravel framework and aims to provide a comprehensive POS solution.
+Hybridoitc POS is a POS application by [HYBRIDOITC](https://hybridoitc.com).
 
-## 📚 Installation & Documentation
+This is an open source POS application initially created as an opensource asset for chitrali students.
 
-For detailed installation instructions and documentation, please refer to the downloaded zip file.
+Framework Laravel
 
-## ⚙️ Server Requirements
+## Installation & Documentation
+You will find installation guide and documentation in the downloaded zip file.
 
-Ensure that your server meets the following requirements:
+## Server requirements
+Make sure your server meets the following requirements:
 
-- PHP >= 7.2
-- OpenSSL PHP Extension
-- PDO PHP Extension
-- Mbstring PHP Extension
-- Tokenizer PHP Extension
-- XML PHP Extension
-- cURL PHP Extension
-- Zip PHP Extension
-- GD PHP Extension
+PHP >= 7.2
+OpenSSL PHP Extension
+PDO PHP Extension
+Mbstring PHP Extension
+Tokenizer PHP Extension
+XML PHP Extension
+cURL PHP Extension
+Zip PHP Extension
+GD PHP Extension
+## Server Recommendation
+Hybridoitc POS can be installed in Localhost.
+If you want to make it accessible online- We recommend using Cloud host – as it provides better flexibility or control of the server. You can use AWS or Digital Ocean or search for some others. Our demo site is set up on the Digital Ocean.
+You can also use Shared hosting. Like for example BigRocks, NameCheap, GoDaddy etc.
 
-## 🚀 Server Recommendations
+## Security Vulnerabilities
 
-Hybridoitc POS can be installed on a localhost environment. For online accessibility, we recommend using a Cloud host such as AWS or Digital Ocean for better flexibility and control. Our demo site is hosted on Digital Ocean. Alternatively, shared hosting options like BigRocks, NameCheap, or GoDaddy can also be used.
+If you discover a security vulnerability within Hybridoitc POS, please send an e-mail to support at hybridoitc@gmail.com. All security vulnerabilities will be promptly addressed.
 
-## 🔒 Security Vulnerabilities
-
-If you discover any security vulnerabilities within Hybridoitc POS, please responsibly disclose them by sending an email to support at hybridoitc@gmail.com. We take security seriously and will promptly address all reported vulnerabilities.
